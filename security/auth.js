@@ -5,7 +5,7 @@ exports.signIn = function(user){
         {username: user.username, admin: user.admin}, 
         global.SALT_KEY, 
         {
-            expiresIn: 60*60*24 //Expira em 24 horas
+            expiresIn: 60*60*24*2 //Expira em 2 dias
         }
     );
 };
